@@ -1,0 +1,18 @@
+{
+  "3": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "test.jpg"
+    }
+  },
+  "4": {
+    "class_type": "GrokVisionNode",
+    "inputs": {
+      "image": ["3", 0],
+      "api_key": "your-api-key-here",
+      "timeout": 30.0,
+      "retry_count": 3,
+      "use_cache": "enable"
+    }
+  }
+} 
